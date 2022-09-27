@@ -1,3 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .buttons {
+    @apply px-6 py-2 border border-[#242424] rounded-full uppercase text-sm tracking-widest text-gray-400 transition-all hover:text-[#F7AB0A]/40;
+  }
+}
+
 html,
 body {
   padding: 0;
@@ -24,3 +34,22 @@ a {
     background: black;
   }
 }
+
+.shadows {
+  box-shadow: 0px 0px 16px 3px #fd1da1;
+}
+
+.shadows:hover {
+  box-shadow: 0px 0px 22px 4px #e30531;
+}
+
+.modal {
+  background: rgb(0, 63, 162);
+  background: linear-gradient(
+    27deg,
+    rgba(0, 63, 162, 0.989233193277311) 18%,
+    rgba(0, 181, 122, 1) 51%,
+    rgba(20, 109, 247, 0.989233193277311) 92%
+  );
+}
+
