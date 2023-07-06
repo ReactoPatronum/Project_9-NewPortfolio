@@ -90,7 +90,7 @@ export default function Header({ data, cookie }: Props) {
               target="_blank"
               rel="noreferrer"
               className="flex justify-between items-center w-full text-gray-300"
-              href="https://github.com/ReactoPatronum?tab=repositories"
+              href="https://www.linkedin.com/in/emre-onur-kayd%C4%B1n-418054246/"
             >
               LinkedIn
               <BsLinkedin size={30} />
