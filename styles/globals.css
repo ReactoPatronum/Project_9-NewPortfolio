@@ -7,7 +7,9 @@
     @apply px-6 py-2 border border-[#242424] rounded-full uppercase text-sm tracking-widest text-gray-400 transition-all hover:text-[#F7AB0A]/40;
   }
 }
-
+.translate-z-0 {
+  transform: translateZ(0px);
+}
 html,
 body {
   padding: 0;
@@ -52,4 +54,3 @@ a {
     rgba(20, 109, 247, 0.989233193277311) 92%
   );
 }
-

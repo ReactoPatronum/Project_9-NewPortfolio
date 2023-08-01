@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { _Contact } from "../typings";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
 
 type Inputs = {
   subject: string;
@@ -10,10 +10,10 @@ type Inputs = {
 };
 
 type Props = {
-  data:_Contact
+  data: _Contact;
 };
 
-export default function Contact({data}: Props) {
+export default function Contact({ data }: Props) {
   const [sendComment, setSendComment] = useState(true);
   const {
     register,
@@ -40,30 +40,30 @@ export default function Contact({data}: Props) {
 
   return (
     <div className=" p-4 h-screen">
-      <div className="  w-full text-gray-300  grid grid-cols-4 max-w-[1000px] mx-auto py-20">
+      <div className=" text-gray-400 w-full text-gray-300  grid grid-cols-4 max-w-[1000px] mx-auto py-20">
         <motion.div
-         initial={{
-          y: -300,
-          opacity: 0,
-        }}
-        whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 1.3 }}
-        className="col-span-4 md:col-span-2 md:mt-40">
-          <h2 className="text-6xl">{data.bigText}</h2>
-          <p className="mt-4 text-xl">
-           {data.smallText}
-          </p>
+          initial={{
+            y: -300,
+            opacity: 0,
+          }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.3 }}
+          className="col-span-4 md:col-span-2 md:mt-40"
+        >
+          <h2 className="text-6xl text-gray-400">{data.bigText}</h2>
+          <p className="mt-4 text-xl ">{data.smallText}</p>
         </motion.div>
         <motion.div
-        initial={{
-          y: 300,
-          opacity: 0,
-        }}
-        whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 1.3 }}
-        className="col-span-4 md:col-span-2 md:mt-40 md:ml-4">
+          initial={{
+            y: 300,
+            opacity: 0,
+          }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.3 }}
+          className="col-span-4 md:col-span-2 md:mt-40 md:ml-4"
+        >
           {sendComment ? (
             <form onSubmit={handleSubmit(onSubmit)}>
               <div>
@@ -96,11 +96,13 @@ export default function Contact({data}: Props) {
                 />
               </div>
               {errors.message && (
-                <p className="text-red-500">Lütfen Mesaj Kısmını Doldurunuz.</p>
+                <p className="text-red-500">
+                  Please fill in the Message field.
+                </p>
               )}
 
               {errors.email && (
-                <p className="text-red-500">Lütfen Email Kısmını Doldurunuz.</p>
+                <p className="text-red-500">Please fill in the Email field.</p>
               )}
               <button
                 className={` text-white text-xl font-semibold bg-blue-500 transition-all duration-300 

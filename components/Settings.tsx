@@ -28,7 +28,7 @@ export default function Settings({}: Props) {
     router.reload();
   }
   return (
-    <div className="absolute bottom-10 right-10 md:right-20 z-50">
+    <div className="fixed bottom-10 right-10 md:right-20 z-50">
       <div className="relative">
         <FiSettings
           onClick={() => setIsModalOpen((current) => !current)}

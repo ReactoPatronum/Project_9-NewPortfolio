@@ -5,22 +5,23 @@ import { _About } from "../typings";
 import { urlFor } from "../client";
 
 type Props = {
-  data:_About
+  data: _About;
 };
 
-export default function About({data}: Props) {
+export default function About({ data }: Props) {
   return (
     <div className="h-screen flex flex-col relative text-center md:text-left md:flex-row max-w-5xl px-10 justify-evenly mx-auto items-center">
       <motion.h3
-      viewport={{once:true}}
-      initial={{ opacity: 0 }}
-      whileInView={{
-        scale: [1, 2, 2, 3, 1],
-        opacity: [0.1, 0.2, 0.4, 0.8, 0.1, 1.0],
-        borderRadius:["20%","20%","50%","80%","20%",]
-      }}
-      transition={{ duration: 2.5 }}
-      className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+        viewport={{ once: true }}
+        initial={{ opacity: 0 }}
+        whileInView={{
+          scale: [1, 2, 2, 3, 1],
+          opacity: [0.1, 0.2, 0.4, 0.8, 0.1, 1.0],
+          borderRadius: ["20%", "20%", "50%", "80%", "20%"],
+        }}
+        transition={{ duration: 2.5 }}
+        className="absolute hidden sm:block top-24 uppercase tracking-[20px] text-gray-400 text-3xl font-semibold"
+      >
         <span>A</span>
         <span>B</span>
         <span>O</span>
@@ -42,14 +43,12 @@ export default function About({data}: Props) {
       <motion.div
         initial={{ opacity: 0, x: 300 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{once:true}}
+        viewport={{ once: true }}
         transition={{ duration: 1.5 }}
         className="space-y-10 px-0 md:px-10"
       >
-        <h4 className="text-4xl font-semibold">
-        {data.title}
-        </h4>
-        <p className="font-semibold text-lg">
+        <h4 className="text-4xl font-semibold text-gray-400">{data.title}👋</h4>
+        <p className="font-semibold sm:text-lg text-gray-400">
           {data.infoText}
         </p>
       </motion.div>

@@ -22,7 +22,7 @@ export default function Header({ data, cookie }: Props) {
   return (
     <header className="p-5 flex items-center justify-between max-w-7xl mx-auto sticky top-0 z-50">
       <motion.div
-        className="space-x-3"
+        className="space-x-3 z-50"
         initial={{
           x: -500,
           opacity: 0,
@@ -32,14 +32,14 @@ export default function Header({ data, cookie }: Props) {
         transition={{ duration: 1.3 }}
       >
         <Link href="#contact">
-          <div className="flex items-center cursor-pointer">
+          <div className="flex items-center cursor-pointer z-50 text-gray-400 hover:text-gray-300 transition-all duration-300">
             <SocialIcon
               className=""
               network="email"
-              fgColor="gray"
+              fgColor="#76889c"
               bgColor="transparent"
             />
-            <p className="text-gray-400 text-xs sm:text-sm uppercase">
+            <p className="text-xs sm:text-sm font-semibold uppercase">
               {data.getInTouch}
             </p>
           </div>
@@ -54,7 +54,7 @@ export default function Header({ data, cookie }: Props) {
         }}
         animate={{ x: 0, opacity: 1, scale: 1 }}
         transition={{ duration: 1.3 }}
-        className="flex items-center  space-x-6"
+        className="flex items-center z-50 space-x-6"
       >
         <div onClick={() => setIsModalOpen(true)} className="cursor-pointer">
           {cookie === "tr" ? (
@@ -90,7 +90,7 @@ export default function Header({ data, cookie }: Props) {
               target="_blank"
               rel="noreferrer"
               className="flex justify-between items-center w-full text-gray-300"
-              href="https://github.com/ReactoPatronum?tab=repositories"
+              href="https://linkedin.com/in/emre-onur-kaydın-418054246"
             >
               LinkedIn
               <BsLinkedin size={30} />

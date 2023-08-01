@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@sanity/image-url": "^1.0.1",
+    "@vercel/analytics": "^1.0.1",
     "cookies-next": "^2.1.1",
     "framer-motion": "^7.3.5",
     "next": "12.3.0",
@@ -22,7 +23,9 @@
     "react-modal": "^3.15.1",
     "react-simple-typewriter": "^4.0.2",
     "react-social-icons": "^5.14.0",
-    "swiper": "^8.4.2"
+    "react-tsparticles": "^2.11.0",
+    "swiper": "^8.4.2",
+    "tsparticles": "^2.11.1"
   },
   "devDependencies": {
     "@types/node": "18.7.18",
