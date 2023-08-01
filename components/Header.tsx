@@ -90,7 +90,11 @@ export default function Header({ data, cookie }: Props) {
               target="_blank"
               rel="noreferrer"
               className="flex justify-between items-center w-full text-gray-300"
+<<<<<<< HEAD
               href="https://linkedin.com/in/emre-onur-kaydın-418054246"
+=======
+              href="https://www.linkedin.com/in/emre-onur-kayd%C4%B1n-418054246/"
+>>>>>>> 89cb6473ef48926dec34b63e5e7e7c2b840817ed
             >
               LinkedIn
               <BsLinkedin size={30} />
