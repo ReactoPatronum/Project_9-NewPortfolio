@@ -80,7 +80,7 @@ export default function Header({ data, cookie }: Props) {
               target="_blank"
               rel="noreferrer"
               className="flex justify-between items-center w-full text-gray-300"
-              href="https://github.com/ReactoPatronum?tab=repositories"
+              href="https://github.com/ReactoPatronum"
             >
               Github <FaGithub size={30} />
             </a>
@@ -99,10 +99,6 @@ export default function Header({ data, cookie }: Props) {
           <li className="cursor-default p-1  w-[300px] hover:w-[260px] h-[60px] flex justify-between items-center ml-[-270px] hover:ml-[-10px] duration-300 bg-red-400">
             <h2> emrekaydin2@gmail.com</h2>
             <HiOutlineMail className="w-[30px] h-[30px] text-white " />
-          </li>
-          <li className="cursor-default p-1  w-[200px] hover:w-[150px] h-[60px] flex justify-between items-center ml-[-170px] hover:ml-[-10px] duration-300 bg-green-400">
-            <h2> 5370552554</h2>
-            <AiFillPhone className="w-[30px] h-[30px] text-white " />
           </li>
           <li className="p-1  w-[150px] h-[60px] flex justify-between items-center ml-[-120px] hover:ml-[-10px] duration-300 bg-[#565f69]">
             <a
